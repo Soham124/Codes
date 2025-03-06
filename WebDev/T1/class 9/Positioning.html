@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+
+    <style>
+        .box {
+            border-radius: 10%;
+            width: 100px;
+            height: 100px;
+            margin: 1px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 11px;
+            right: 12px;
+            left: 13px;
+            bottom: 14px;
+        }
+
+        .relative {
+            position: relative;
+            top: 21px;
+            right: 22px;
+            left: 23px;
+            bottom: 24px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 31px;
+            right: 32px;
+            left: 33px;
+            bottom: 34px;
+        }
+
+        .static {
+            position: static;
+            top: 41px;
+            right: 42px;
+            left: 43px;
+            bottom: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box absolute">One</div>
+    <div class="box relative">Two</div>
+    <div class="box fixed">Three</div>
+    <div class="box static">Four</div>
+</body>
+
+</html>

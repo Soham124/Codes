@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .card {
+            animation: move 5s infinite;
+        }
+        .box img {
+            width: 200px;
+            height: 200px;
+            background-color: #d39840;
+            border: 10px dotted #8f5600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            object-fit: cover;
+            animation: image-reveal 10s infinite;
+        }
+
+        @keyframes image-reveal {
+            25% {
+                transform: translateY(100%) scale(0);
+            }
+
+            50% {
+                transform: translateY(0%) scale(1);
+            }
+
+            75% {
+                transform: translateY(100%) scale(0);
+            }
+
+            100% {
+                transform: translateY(0%) scale(0);
+            }
+        }
+
+        .box2 img {
+            width: 200px;
+            height: 100px;
+            background-color: #d39840;
+            border: 10px solid #8f5600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            object-fit: cover;
+        }
+
+        .overall {
+            background-color: grey;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(25%, 0);
+            }
+
+            50% {
+                transform: translate(25%, 25%);
+            }
+
+            75% {
+                transform: translate(0, 25%);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overall">
+        <div class="card">
+            <div class="box">
+                <img src="https://imgs.search.brave.com/Vnf17dvmHlJQRIitREJZQbtNnuJl6bP9Ke47xLcEneo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2NhbGVyLmNvbS90/b3BpY3MvaW1hZ2Vz/L21yaW5hbF9iaGF0/dGFjaGFyeWEud2Vi/cA"
+                    width="200px" alt="Image placeholder" />
+            </div>
+
+            <div class="box2">
+                <img
+                    src="https://imgs.search.brave.com/-wlDFPU2it8wHkSyAb0MmOYs5iatpFXK4QtRFHsxrcg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mcmll/bmRzaGlwZGF5c3Rh/dHVzLm5ldC93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8wOC9I/YXBweS1UZWFjaGVy/cy1EYXktV2lzaGVz/LVF1b3Rlcy1TdGF0/dXMtU01TLVBvZW1z/LUltYWdlcy00LWUx/NTA0NTg3MDA1ODMy/LmpwZw" />
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/* General styles for body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3; /* Light background color */
+}
+
+/* Toolbox (Navbar) styles */
+.toolbox-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Color buttons */
+.toolbox-priority-cont {
+    display: flex;
+    gap: 10px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 15%; /* Circular color indicators */
+    cursor: pointer;
+}
+
+.lightpink {
+    background-color: #ffc0cb;
+}
+
+.lightgreen {
+    background-color: #90ee90;
+}
+
+.lightblue {
+    background-color: #add8e6;
+}
+
+.black {
+    background-color: #000;
+}
+
+/* Action buttons (add and remove) */
+.action-btn-cont {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn-cont .add-btn, .action-btn-cont .remove-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555; /* Slightly lighter gray */
+    color: #fff; /* White icons */
+    border-radius: 15%; /* Circular buttons */
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-btn-cont .add-btn:hover,
+.action-btn-cont .remove-btn:hover {
+    background-color: #777; /* Lighter on hover */
+}
+
+/* Modal and task container styling if necessary */
+.modal-cont {
+    display: none; /* Hide modal by default */
+}
+
+/* Additional optional styles for better responsiveness */
+@media (max-width: 600px) {
+    .toolbox-cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-btn-cont {
+        margin-top: 10px;
+    }
+}

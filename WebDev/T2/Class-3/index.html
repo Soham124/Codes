@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="rootElement"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    
+    <script>
+        let headingElement = React.createElement(
+            "h1",
+            {
+                className: "heading_1",
+                style: { fontSize: "4rem", backgroundColor: "red" },
+            },
+            "Hello from React"
+        );
+        ReactDOM.render(headingElement, document.getElementById('rootElement'));
+
+        console.log(headingElement);
+    </script>
+</body>
+
+</html>
