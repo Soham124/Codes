@@ -8,6 +8,5 @@ console.log(name)
 let myObj = {
     name : "prakash",
     age : 18
-    
 }
 console.log(myObj)
