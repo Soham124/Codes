@@ -1,15 +1,21 @@
-// Fibonacci series using recursion
+
 public class temporary {
-    static int func(int count){
-        if (count <= 0) {
-            return 0;
-        } else if (count == 1) {
-            return 1;
+    static int func(int[] operations){
+        int count = 0;
+        for(int i = 0; i < operations.length; i++){
+            if (operations[i]==6 || operations[i]==7){
+                count++;
+            }
         }
-        int n = func(count-1) + func(count-2);
-        return n;
+        
+        if(count!=operations.length-count){
+            return count-operations.length-count;
+        }else{
+            return 0;
+        }
     }
     public static void main(String[] args) {
-        System.out.println(func(7));
+        int[] arr = {4, 5, 4, 6, 7, 6, 7};
+        System.out.println(func(arr));
     }
 }

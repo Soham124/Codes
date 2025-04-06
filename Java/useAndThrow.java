@@ -1,11 +1,31 @@
-public class useAndThrow {
-    public static void divide(int arr[], int si, int ei){
-        int mid = si + (ei-si)/2;
-        divide(arr, si, mid);
-        
+import java.util.*;
+
+class Queue {
+
+    Stack<Integer> S1 = new Stack<>();
+    Stack<Integer> S2 = new Stack<>();
+
+    void add(int x) {
+        S1.add(x);
     }
-    public static void main(String[] args) {
-        int arr [] = {6, 3, 9, 5, 2, 8};
-        int n = arr.length;
+
+    void remove() {
+        while (!S1.isEmpty()) {
+            S2.push(S1.pop());
+        }
+
+        if (!S2.isEmpty()) {
+            S2.pop();
+        }
+        while (!S2.isEmpty()) {
+            S1.push(S2.pop());
+        }
     }
+
+    void print() {
+        while (!S1.isEmpty()) {
+            System.out.println(S1.pop());
+        }
+    }
+
 }

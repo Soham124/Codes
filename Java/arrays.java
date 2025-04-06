@@ -7,6 +7,8 @@ public class arrays {
 
         // Syntax= datatype[] variablename = new datatype[size];
 
+        int[] myArray = {1, 2, 3, 4, 5};
+        
         int[] Arr = new int[N];
         for (int i=0; i<N; i++){
             Arr[i] = sc.nextInt();
