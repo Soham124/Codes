@@ -1,4 +1,4 @@
-// //Insertion Sort
+// //Insertion Sort (time complexity= O(n^2))
 // //sorts the array from the beginning in parts
 // import java.util.*;
 // public class sorting {

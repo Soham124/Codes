@@ -17,6 +17,7 @@ public class arrays {
 
         for (int i=0; i<N; i++){
             System.out.print(Arr[i]+ " ");
+            System.out.print(myArray[i]+ " ");
         }
     }
 }
