@@ -2,11 +2,9 @@
 public class mergeSortedArrays {
     // Function to merge two sorted arrays into a sorted result
     public static void mergeArrays(int[] arr1, int[] arr2, int[] arr3) {
-        int n1 = arr1.length;
-        int n2 = arr2.length;
         int i = 0, j = 0, k = 0;
         // Merge the two arrays
-        while (i < n1 && j < n2) {
+        while (i < arr1.length && j < arr2.length) {
             if (arr1[i] <= arr2[j]) {
                 arr3[k] = arr1[i];
                 i++;
@@ -17,13 +15,13 @@ public class mergeSortedArrays {
             k++;
         }
         // Copy remaining elements of arr1, if any
-        while (i < n1) {
+        while (i < arr1.length) {
             arr3[k] = arr1[i];
             i++;
             k++;
         }
         // Copy remaining elements of arr2, if any
-        while (j < n2) {
+        while (j < arr2.length) {
             arr3[k] = arr2[j];
             j++;
             k++;
