@@ -1,0 +1,5 @@
+RDBMS = The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.
+
+Rows = Records = Horizontal
+Columns = Fields = Vertical
+
