@@ -1,16 +1,14 @@
-CREATE DATABASE college;
+use sakila;
 
-USE college;
+SELECT actor.first_name, actor.last_name, COUNT(film.film_id) AS film_count
+FROM actor
+INNER JOIN film_actor ON actor.actor_id = film_actor.actor_id
+INNER JOIN film ON film_actor.film_id = film.film_id
+GROUP BY actor.actor_id, actor.first_name, actor.last_name;
 
-CREATE TABLE student (
-	id INT PRIMARY KEY,
-    name VARCHAR (50),
-    age INT NOT NULL
-);
-
-INSERT INTO student VALUES(1, "SOHAM", 19);
-INSERT INTO student VALUES(2, "LILY", 18);
-
-SELECT * FROM student;
-
-SHOW DATABASES
+SELECT actor.actor_id, actor.first_name, actor.last_name
+FROM actor
+INNER JOIN film_actor ON actor.actor_id = film_actor.actor_id
+INNER JOIN film ON film_actor.film_id = film.film_id
+GROUP BY actor.actor_id, actor.first_name, actor.last_name
+HAVING COUNT(*) > 20;
