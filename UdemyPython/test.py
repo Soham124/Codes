@@ -22,13 +22,13 @@
 #         print("*", end="")
 #     print()
 
-num = int(input())
-first = 0
-second = 1
+# num = int(input())
+# first = 0
+# second = 1
 
-for i in range (0, num+1):
-    print (first)
+# for i in range (0, num+1):
+#     print (first)
 
-    temp = second
-    second = first + second
-    first = temp 
+#     temp = second
+#     second = first + second
+#     first = temp
