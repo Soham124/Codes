@@ -1,7 +1,7 @@
 package DSA;
 import java.util.*;
 
-public class hashing {
+public class hashMap {
     public static void main(String[] args) {
         HashMap<String, Integer> EmpID = new HashMap<>();
         EmpID.put("Soham", 69);
