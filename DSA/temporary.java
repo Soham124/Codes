@@ -1,5 +1,4 @@
 package DSA;
-import java.util.*;
 
 public class temporary {
     public static void main(String[] args) {
