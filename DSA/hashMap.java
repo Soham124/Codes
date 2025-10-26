@@ -12,7 +12,7 @@ public class hashMap {
         System.out.println(map);
         System.out.println(map.size()); //size of the hashmap(no of pairs)
         if(map.containsKey(4)){
-            System.out.println(map.get("Green")); //prints value of key Green if it exists
+            System.out.println(map.get(2)); //prints value of key 2 which is "Green"
         }
 
 
