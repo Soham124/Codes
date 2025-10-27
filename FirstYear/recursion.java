@@ -1,5 +1,4 @@
 package FirstYear;
-import java.util.*;
 
 public class recursion {
 
@@ -12,18 +11,18 @@ public class recursion {
     // }
 
     //Binary Search by recursion
-    // static int bin(int arr [], int target, int s, int e){
-    //     int mid = s+ (e-s)/2;
-    //     if (s>e){
-    //         return -1;
-    //     }else if(target>arr[mid]){
-    //         return bin(arr, target, mid+1, e);
-    //     }else if(target == arr[mid]){
-    //         return mid;
-    //     }else{
-    //         return bin(arr, target, s, mid-1);
-    //     }
-    // }
+    static int bin(int arr [], int target, int s, int e){
+        int mid = s+ (e-s)/2;
+        if (s>e){
+            return -1;
+        }else if(target>arr[mid]){
+            return bin(arr, target, mid+1, e);
+        }else if(target == arr[mid]){
+            return mid;
+        }else{
+            return bin(arr, target, s, mid-1);
+        }
+    }
 
     //Number printing from n to 1;
     // static void series(int n){
@@ -155,32 +154,33 @@ public class recursion {
     // }
 
     //Selection Sorting
-    static void selectionSort(int arr [], int r, int c, int max){
-        if(r==0) return;
-        if(c<r){
-            if(arr[c]>arr[max]){
-                selectionSort(arr, r, c+1, c);
-            }else{
-                selectionSort(arr, r, c+1, max);
-            }
-        }else{
-            int temp = arr[max];
-            arr[max] = arr[r-1];
-            arr[r-1] = temp;
-            selectionSort(arr, r-1, 0, 0);
-        }
-    }
+    // static void selectionSort(int arr [], int r, int c, int max){
+    //     if(r==0) return;
+    //     if(c<r){
+    //         if(arr[c]>arr[max]){
+    //             selectionSort(arr, r, c+1, c);
+    //         }else{
+    //             selectionSort(arr, r, c+1, max);
+    //         }
+    //     }else{
+    //         int temp = arr[max];
+    //         arr[max] = arr[r-1];
+    //         arr[r-1] = temp;
+    //         selectionSort(arr, r-1, 0, 0);
+    //     }
+    // }
 
     public static void main(String[] args) {
         //Fibonacci
         // int n = fibo(5);
 
         //binary search
-        // int [] arr = {4, 8, 16, 32, 64, 128};
-        // int target = 64;
-        // int e = arr.length-1;
-        // int s = 0;
-        // int n = bin(arr, target, s, e);
+        int [] arr = {4, 8, 16, 32, 64, 128};
+        int target = 64;
+        int e = arr.length-1;
+        int s = 0;
+        int n = bin(arr, target, s, e);
+        System.out.println(n);
 
         //num printing
         // series(5);
@@ -224,8 +224,8 @@ public class recursion {
         // System.out.println(Arrays.toString(arr));
         
         //Selection Sorting
-        int [] arr = {1, 2, 5, 65, 64, 1, 24, 6, 6};
-        selectionSort(arr, arr.length, 0, 0);
-        System.out.println(Arrays.toString(arr));
+        // int [] arr = {1, 2, 5, 65, 64, 1, 24, 6, 6};
+        // selectionSort(arr, arr.length, 0, 0);
+        // System.out.println(Arrays.toString(arr));
     }
 }

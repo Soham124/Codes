@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Java",
+        ""
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

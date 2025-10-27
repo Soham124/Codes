@@ -1,5 +1,5 @@
 package SecondYear;
 
-public class test {
+public class test{
     
 }
