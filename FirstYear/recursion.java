@@ -11,18 +11,18 @@ public class recursion {
     // }
 
     //Binary Search by recursion
-    static int bin(int arr [], int target, int s, int e){
-        int mid = s+ (e-s)/2;
-        if (s>e){
-            return -1;
-        }else if(target>arr[mid]){
-            return bin(arr, target, mid+1, e);
-        }else if(target == arr[mid]){
-            return mid;
-        }else{
-            return bin(arr, target, s, mid-1);
-        }
-    }
+    // static int bin(int arr [], int target, int s, int e){
+    //     int mid = s+ (e-s)/2;
+    //     if (s>e){
+    //         return -1;
+    //     }else if(target>arr[mid]){
+    //         return bin(arr, target, mid+1, e);
+    //     }else if(target == arr[mid]){
+    //         return mid;
+    //     }else{
+    //         return bin(arr, target, s, mid-1);
+    //     }
+    // }
 
     //Number printing from n to 1;
     // static void series(int n){
@@ -174,13 +174,13 @@ public class recursion {
         //Fibonacci
         // int n = fibo(5);
 
-        //binary search
-        int [] arr = {4, 8, 16, 32, 64, 128};
-        int target = 64;
-        int e = arr.length-1;
-        int s = 0;
-        int n = bin(arr, target, s, e);
-        System.out.println(n);
+        // //binary search
+        // int [] arr = {4, 8, 16, 32, 64, 128};
+        // int target = 64;
+        // int e = arr.length-1;
+        // int s = 0;
+        // int n = bin(arr, target, s, e);
+        // System.out.println(n);
 
         //num printing
         // series(5);
@@ -197,7 +197,7 @@ public class recursion {
         // int n = product(555);
         // System.out.println(n);
 
-        //Reverse a number
+        // Reverse a number
         // int n = rev(1824);
         // System.out.println(n);
 
